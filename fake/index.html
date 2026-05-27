@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjivani University | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Popppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Screenshot 2026-02-16 181528.png" alt="Sanjivani University Logo" class="uni-logo">
+            <h1 class="portal-title">Student Re-examination Result Portal</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <form id="resultForm">
+                <div class="form-group">
+                    <label for="prnNumber">PRN Number</label>
+                    <input type="text" id="prnNumber" placeholder="Enter PRN" required pattern="[A-Za-z0-9]+"
+                        title="Alphanumeric characters only">
+                </div>
+
+                <div class="form-group captcha-container">
+                    <label>Enter the code shown below</label>
+                    <div class="captcha-display">
+                        <span id="captchaCode">A7K2P</span>
+                        <button class="refresh-btn" type="button" aria-label="Refresh Captcha">↻</button>
+                    </div>
+                    <input type="text" id="userCaptcha" placeholder="Enter Code" required autocomplete="off">
+                </div>
+
+                <button type="submit" class="btn-primary">Check Result</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sanjivani University. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
